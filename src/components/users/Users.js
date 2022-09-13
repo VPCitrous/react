@@ -21,7 +21,8 @@ const Users = () => {
     }, []);
 
     const loaduser = async () => {
-        const result = await axios.get(`http://localhost:4003/users/${id}`);
+        //const result = await axios.get(`http://localhost:4003/users/${id}`);
+        const result = await axios.get(`https://my-json-server.typicode.com/VPCitrous/users/users/${id}`);
         setUser(result.data);
     }
 

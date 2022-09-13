@@ -26,12 +26,14 @@ const EditUser = () => {
 
     const onSubmit = async e => {
         e.preventDefault();
-       await axios.put(`http://localhost:4003/users/${id}`, user);
+       //await axios.put(`http://localhost:4003/users/${id}`, user);
+       await axios.put(`https://my-json-server.typicode.com/VPCitrous/users/users/${id}`, user);
        history.push("/");
     }
 
     const loaduser = async () => {
-        const result = await axios.get(`http://localhost:4003/users/${id}`);
+        //const result = await axios.get(`http://localhost:4003/users/${id}`);
+        const result = await axios.get(`https://my-json-server.typicode.com/VPCitrous/users/users/${id}`);
         setUser(result.data);
     }
 

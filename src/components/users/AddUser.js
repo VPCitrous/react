@@ -21,7 +21,8 @@ const AddUser = () => {
 
     const onSubmit = async e => {
         e.preventDefault();
-       await axios.post("http://localhost:4003/users", user);
+       //await axios.post("http://localhost:4003/users", user);
+       await axios.post("https://my-json-server.typicode.com/VPCitrous/users/users", user);
        history.push("/");
     }
 

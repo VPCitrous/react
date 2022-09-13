@@ -10,12 +10,14 @@ const Home = () => {
     }, []);
 
     const loadUsers = async () => {
-        const result = await axios.get("http://localhost:4003/users");
+        //const result = await axios.get("http://localhost:4003/users");
+        const result = await axios.get("https://my-json-server.typicode.com/VPCitrous/users/users");
         setUser(result.data.reverse());
     }
 
     const deleteUser = async id => {
-        await axios.delete(`http://localhost:4003/users/${id}`);
+        //await axios.delete(`http://localhost:4003/users/${id}`);
+        await axios.delete(`https://my-json-server.typicode.com/VPCitrous/users/users/${id}`);
         loadUsers();
     }
 
