@@ -1,6 +1,6 @@
 {
   "name": "users",
-  "Homepage": "http://VPCitrous.github.io/react-users",
+  "Homepage": "http://VPCitrous.github.io/usersCRUD-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
